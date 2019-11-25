@@ -1,6 +1,8 @@
 package com.example.androidfinalproject.currencyConverter.ui.convert;
 
 import android.content.ContentValues;
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -18,11 +20,11 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProviders;
 
 import com.example.androidfinalproject.R;
 import com.example.androidfinalproject.currencyConverter.CurrencyDBHelper;
 import com.example.androidfinalproject.currencyConverter.CurrencyObject;
+import com.google.android.material.snackbar.Snackbar;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -41,6 +43,7 @@ import java.util.concurrent.ExecutionException;
 
 /**
  * This class implement convert fragment
+ * @author :Wajahat
  */
 public class ConvertFragment extends Fragment {
 
@@ -50,6 +53,7 @@ public class ConvertFragment extends Fragment {
     private ArrayList<CurrencyObject> currencyList = new ArrayList<>();
     JSONObject resp;
     private ProgressBar progressBar;
+    SharedPreferences.Editor sharePreferencesEdit;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -63,6 +67,9 @@ public class ConvertFragment extends Fragment {
         CurrencyDBHelper dbHelper = new CurrencyDBHelper(this.getActivity());
         SQLiteDatabase db = dbHelper.getReadableDatabase();
 
+        SharedPreferences sharedPreferences = this.getContext().getSharedPreferences("currency", Context.MODE_PRIVATE);
+        sharePreferencesEdit = sharedPreferences.edit();
+
         try {
             CurrencyService getRequest = new CurrencyService();
             String base = "CAD";
@@ -75,9 +82,15 @@ public class ConvertFragment extends Fragment {
             }
             initSpinner(spinner_currency_in, currencySymbol);
             initSpinner(spinner_currency_out, currencySymbol);
-            spinner_currency_out.setSelection(3);
-            edt.setText("1");
-            onConvert(root, 1);
+
+            //init value for spinner, amount. Get from sharePreferences if available
+            int baseIndex = currencySymbol.indexOf(sharedPreferences.getString("base", base));
+            int resultIndex = currencySymbol.indexOf(sharedPreferences.getString("result", base));
+            float amount = sharedPreferences.getFloat("amount", 0);
+            spinner_currency_in.setSelection(baseIndex);
+            spinner_currency_out.setSelection(resultIndex);
+            edt.setText(String.valueOf(amount));
+            onConvert(root, amount);
 
         } catch (ExecutionException e) {
             e.printStackTrace();
@@ -88,17 +101,19 @@ public class ConvertFragment extends Fragment {
         } catch (ParseException e) {
             e.printStackTrace();
         }
-
+        //convert currency
         Button btn_convert = root.findViewById(R.id.btn_convert);
         btn_convert.setOnClickListener(clik ->
         {
             try {
-                onConvert(root, Integer.parseInt(edt.getText().toString()));
+                onConvert(root, Float.parseFloat(edt.getText().toString()));
+                Toast toast = Toast.makeText(getActivity().getApplicationContext(),  R.string.toast_converted, Toast.LENGTH_LONG);
+                toast.show();
             } catch (JSONException | ParseException e) {
                 e.printStackTrace();
             }
         });
-
+        //add to favourite
         Button btn_favourite = root.findViewById(R.id.btn_save);
         btn_favourite.setOnClickListener(click ->{
             ContentValues cv = new ContentValues();
@@ -106,6 +121,9 @@ public class ConvertFragment extends Fragment {
             cv.put(CurrencyDBHelper.COL_BASE, spinner_currency_in.getSelectedItem().toString());
             cv.put(CurrencyDBHelper.COL_RESULT, spinner_currency_out.getSelectedItem().toString());
             long id = db.insert(CurrencyDBHelper.TABLE_FAVOURITE, "NullColumnName", cv);
+
+            Toast toast = Toast.makeText(getActivity().getApplicationContext(),  R.string.favMsginConvertFragment, Toast.LENGTH_LONG);
+            toast.show();
         });
         return root;
     }
@@ -117,14 +135,20 @@ public class ConvertFragment extends Fragment {
      * @throws JSONException
      * @throws ParseException
      */
-    private void onConvert(View root, int amount) throws JSONException, ParseException {
+    private void onConvert(View root, float amount) throws JSONException, ParseException {
 
         Spinner spinner_currency_in = (Spinner) root.findViewById(R.id.spinner_currency_in);
         Spinner spinner_currency_out = (Spinner) root.findViewById(R.id.spinner_currency_out);
 
-        Double result = convert(amount, spinner_currency_in.getSelectedItem().toString(), spinner_currency_out.getSelectedItem().toString());
+        String result = convert(amount, spinner_currency_in.getSelectedItem().toString(), spinner_currency_out.getSelectedItem().toString());
         TextView output_amount = root.findViewById(R.id.output_amount);
-        output_amount.setText(String.valueOf(result));
+        output_amount.setText(result);
+
+
+        sharePreferencesEdit.putFloat("amount", amount);
+        sharePreferencesEdit.putString("base", spinner_currency_in.getSelectedItem().toString());
+        sharePreferencesEdit.putString("result", spinner_currency_out.getSelectedItem().toString());
+        sharePreferencesEdit.commit();
     }
 
     /**
@@ -136,10 +160,10 @@ public class ConvertFragment extends Fragment {
      * @throws JSONException
      * @throws ParseException
      */
-    private Double convert(int amount, String from, String to) throws JSONException, ParseException {
+    private String convert(double amount, String from, String to) throws JSONException, ParseException {
         DecimalFormat format = new DecimalFormat(".00");
         Double result = amount * resp.getDouble(to) / resp.getDouble(from);
-        return (Double) format.parse(format.format(result));
+        return format.format(result);
     }
 
     /**
@@ -247,16 +271,10 @@ public class ConvertFragment extends Fragment {
                 public void run() {
                     progressBar.setVisibility(View.GONE);
                 }
-            }, 2000);
+            }, 1000);
 
-            Toast toast = Toast.makeText(getActivity().getApplicationContext(), "Successful load currency", Toast.LENGTH_LONG);
-            toast.show();
-        }
-
-        @Override
-        protected void onProgressUpdate(Integer... values) {
-            super.onProgressUpdate(values);
-
+            Snackbar.make(getView(), R.string.toast_ConvertFragment, Snackbar.LENGTH_LONG)
+                    .setAction("Action", null).show();
         }
     }
 }

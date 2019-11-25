@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">اینڈروئیڈ فائنل پروجیکٹ</string>
+    <string name="navigation_drawer_open">نیویگیشن دراز کھولیں</string>
+    <string name="navigation_drawer_close">نیویگیشن دراز کو بند کریں</string>
+    <string name="nav_header_title">کرنسی کنورٹر</string>
+    <string name="nav_header_subtitle">mail@wajahat.dev</string>
+    <string name="nav_header_desc">نیویگیشن ہیڈر</string>
+    <string name="menu_home">تبدیل کریں</string>
+    <string name="menu_gallery">پسندیدہ</string>
+    <string name="menu_slideshow">مدد</string>
+    <string name="menu_tools">ٹولز</string>
+    <string name="menu_share">بانٹیں</string>
+    <string name="menu_send">بھیجیں</string>
+    <string name="charging_station">چارجنگ اسٹیشن</string>
+    <string name="news">خبریں</string>
+    <string name="recipe_finder">نسخہ_فائنڈر</string>
+    <string name="currency">کرنسی</string>
+    <string name="input_currency">کرنسی درج کریں</string>
+    <string name="btn_convert">تبدیل کریں</string>
+    <string name="btn_save">پسندیدہ میں شامل کریں</string>
+    <string name="btn_delete">حذف کریں</string>
+    <string name="dialog_delete_message">کیا آپ واقعی اسے حذف کرنا چاہتے ہیں؟</string>
+    <string name="dialog_title">حذف کریں</string>
+    <string name="ok">ٹھیک ہے</string>
+    <string name="cancel">منسوخ کریں</string>
+    <string name="action_home">ہوم پیج پر جائیں</string>
+    <string name="dialog_help_message">
+        مصنف: وجاہت علی\n
+        \nسرگرمی ورژن نمبر: 1.0.0\n
+        \nہدایت:
+        \n1. ایک کرنسی سے دوسری کرنسی میں تبدیل کریں
+        \n2. بعد میں تبدیل کرنے کے لئے پسندیدہ کرنسی کو محفوظ کریں
+        \n3. پسندیدہ کو ہٹانے کے لئے حذف کریں کے بٹن پر کلک کریں
+        \n4. پسندیدہ کو ہٹانے کے لئے حذف کے بٹن پر کلک کریں</string>
+    <string name="dialog_help_title">مدد</string>
+    <string name="close">بند کریں</string>
+    <string name="favMsginConvertFragment">کامیابی کے ساتھ آپ کے پسندیدہ میں شامل کیا گیا!</string>
+    <string name="toast_ConvertFragment">کرنسی کنورٹر کامیابی کے ساتھ لوڈ ہوگیا</string>
+
+    <string name="toast_deleted">Delete successfully</string>
+    <string name="toast_converted">Converted Successfully</string>
+
+</resources>

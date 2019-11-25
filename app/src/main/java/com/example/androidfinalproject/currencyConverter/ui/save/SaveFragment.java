@@ -24,6 +24,7 @@ import java.util.ArrayList;
 
 /**
  * This class implement save fragment
+ * @author :Wajahat
  */
 public class SaveFragment extends Fragment {
 
@@ -69,15 +70,6 @@ public class SaveFragment extends Fragment {
         ListView theList = root.findViewById(R.id.lv_currency);
         theList.setAdapter(myAdapter = new CurrencyConverterAdapter(this, currencyList));
         theList.setClickable(true);
-        theList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view,
-                                    int position, long id) {
-                Toast.makeText(getContext(),
-                        "Click ListItem Number : " + position, Toast.LENGTH_LONG)
-                        .show();
-            }
-        });
         myAdapter.notifyDataSetChanged();
 
         return root;

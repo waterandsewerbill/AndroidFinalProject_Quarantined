@@ -16,23 +16,22 @@ import com.example.androidfinalproject.R;
 
 /**
  * This class show help information
+ * @author :Wajahat
  */
 public class HelpFragment extends Fragment {
 
-    private HelpViewModel helpViewModel;
-
+    /**
+     * This method display help information
+     * @param inflater
+     * @param container
+     * @param savedInstanceState
+     * @return
+     */
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        helpViewModel =
-                ViewModelProviders.of(this).get(HelpViewModel.class);
         View root = inflater.inflate(R.layout.fragment_help, container, false);
         final TextView textView = root.findViewById(R.id.text_slideshow);
-        helpViewModel.getText().observe(this, new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
+        textView.setText(R.string.dialog_help_message);
         return root;
     }
 }

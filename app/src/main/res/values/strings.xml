@@ -3,23 +3,19 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Currency Converter</string>
-    <string name="nav_header_subtitle">private.wajahatali@gmail.com</string>
+    <string name="nav_header_subtitle">mail@wajahat.dev</string>
     <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
-
+    <string name="action_home">Go Home Page</string>
     <string name="menu_home">Convert</string>
     <string name="menu_gallery">Favorite</string>
     <string name="menu_slideshow">Help</string>
     <string name="menu_tools">Tools</string>
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
-
-
     <string name="charging_station">Charging Station</string>
     <string name="news">News</string>
     <string name="recipe_finder">Recipe_Finder</string>
     <string name="currency">Currency</string>
-
     <string name="input_currency">Enter currency</string>
     <string name="btn_convert">Convert</string>
     <string name="btn_save">Add to favourite</string>
@@ -28,4 +24,21 @@
     <string name="dialog_title">Delete</string>
     <string name="ok">Ok</string>
     <string name="cancel">Cancel</string>
+    <string name="dialog_help_message">
+        Author: Wajahat Ali\n
+        \nActivity version number: 1.0.0\n
+        \nHow to use:
+        \n1. Convert from one currency to another currency
+        \n2. Save the favourite currency to convert later
+        \n3. Click delete button to remove favourite
+        \n4. Click item in list favourite to see detail
+        \n5. Click home icon to go back home page</string>
+    <string name="dialog_help_title">Help</string>
+    <string name="close">Close</string>
+    <string name="favMsginConvertFragment">Added to your favorite successfully!</string>
+    <string name="toast_ConvertFragment">Converter Loaded Successfully</string>
+
+
+    <string name="toast_deleted">Delete successfully</string>
+    <string name="toast_converted">Converted Successfully</string>
 </resources>
