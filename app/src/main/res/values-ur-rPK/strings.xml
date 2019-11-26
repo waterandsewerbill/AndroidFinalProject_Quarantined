@@ -6,7 +6,7 @@
     <string name="nav_header_title">کرنسی کنورٹر</string>
     <string name="nav_header_subtitle">mail@wajahat.dev</string>
     <string name="nav_header_desc">نیویگیشن ہیڈر</string>
-    <string name="menu_home">تبدیل کریں</string>
+    <string name="menu_home">کرنسی کنورٹر</string>
     <string name="menu_gallery">پسندیدہ</string>
     <string name="menu_slideshow">مدد</string>
     <string name="menu_tools">ٹولز</string>
@@ -32,13 +32,14 @@
         \n1. ایک کرنسی سے دوسری کرنسی میں تبدیل کریں
         \n2. بعد میں تبدیل کرنے کے لئے پسندیدہ کرنسی کو محفوظ کریں
         \n3. پسندیدہ کو ہٹانے کے لئے حذف کریں کے بٹن پر کلک کریں
-        \n4. پسندیدہ کو ہٹانے کے لئے حذف کے بٹن پر کلک کریں</string>
+        \n4. پسندیدہ کو ہٹانے کے لئے حذف کے بٹن پر کلک کریں
+        \n5. ہوم پیج پر واپس جانے کیلئے ہوم آئکن پر کلک کریں
+    </string>
     <string name="dialog_help_title">مدد</string>
     <string name="close">بند کریں</string>
     <string name="favMsginConvertFragment">کامیابی کے ساتھ آپ کے پسندیدہ میں شامل کیا گیا!</string>
     <string name="toast_ConvertFragment">کرنسی کنورٹر کامیابی کے ساتھ لوڈ ہوگیا</string>
-
-    <string name="toast_deleted">Delete successfully</string>
-    <string name="toast_converted">Converted Successfully</string>
+    <string name="toast_deleted">کامیابی کے ساتھ حذف کریں</string>
+    <string name="toast_converted">کامیابی کے ساتھ تبدیل ہوا</string>
 
 </resources>

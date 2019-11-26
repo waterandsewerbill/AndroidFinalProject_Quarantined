@@ -6,7 +6,7 @@
     <string name="nav_header_subtitle">mail@wajahat.dev</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_home">Go Home Page</string>
-    <string name="menu_home">Convert</string>
+    <string name="menu_home">Currency Converter</string>
     <string name="menu_gallery">Favorite</string>
     <string name="menu_slideshow">Help</string>
     <string name="menu_tools">Tools</string>
@@ -18,7 +18,7 @@
     <string name="currency">Currency</string>
     <string name="input_currency">Enter currency</string>
     <string name="btn_convert">Convert</string>
-    <string name="btn_save">Add to favourite</string>
+    <string name="btn_save">Add to favorite</string>
     <string name="btn_delete">Delete</string>
     <string name="dialog_delete_message">Are you want to delete?</string>
     <string name="dialog_title">Delete</string>
