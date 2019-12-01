@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recipeList"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/recipeSearchButton"
+        android:text="@string/recipesearch"
+        android:layout_alignBottom="@+id/recipeList"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/recipeSearchBox"
+        android:layout_alignBottom="@+id/recipeList"
+        android:layout_toEndOf="@+id/recipeSearchButton"
+        android:hint="@string/recipesearchhint"
+        />
+
+    <ProgressBar
+        android:id="@+id/recipeProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_alignBottom="@id/recipeList"
+        android:layout_toEndOf="@id/recipeSearchBox"
+        android:visibility="invisible"
+        />
+
+</RelativeLayout>

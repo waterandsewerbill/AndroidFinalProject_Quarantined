@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">AndroidFinalProject</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -41,4 +41,8 @@
 
     <string name="toast_deleted">Delete successfully</string>
     <string name="toast_converted">Converted Successfully</string>
+
+    <string name="recipesearch" tools:ignore="MissingTranslation">Search</string>
+    <string name="recipesearchhint" tools:ignore="MissingTranslation">Search Here</string>
+
 </resources>

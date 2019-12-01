@@ -5,6 +5,8 @@ import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.androidfinalproject.R;
+
 public class RecipeFinder extends AppCompatActivity {
 
     public static final String ACTIVITY_NAME = "RECIPE_FINDER";
@@ -13,7 +15,7 @@ public class RecipeFinder extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_recipe_finder);
+        setContentView(R.layout.activity_recipe_finder);
     }
 
     @Override
