@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         ImageButton btn_recipe = (ImageButton)findViewById(R.id.btn_recipe);
-        btn_charge.setOnClickListener(bt -> {
+        btn_recipe.setOnClickListener(bt -> {
             Intent nextPage = new Intent(MainActivity.this, RecipeFinder.class);
             startActivity(nextPage);
         });

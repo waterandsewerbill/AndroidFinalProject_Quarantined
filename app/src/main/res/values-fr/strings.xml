@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="recipe_finder">Recipe Finder</string>
+    <string name="therecipemessage">Le Message</string>
+    <string name="recipesearch" tools:ignore="MissingTranslation">Cherche</string>
+    <string name="recipesearchhint" tools:ignore="MissingTranslation">Cherche Ici</string>
+    <string name="recipewelcome" >Bienvenue!</string>
+    <string name="recipefavorites" tools:ignore="MissingTranslation">Preferer</string>
+    <string name="recipehelp" tools:ignore="MissingTranslation">Aide</string>
+    <string name="recipequit" tools:ignore="MissingTranslation">Quiter</string>
+    <string name="recipedelete" tools:ignore="MissingTranslation">Deleter</string>
+    <string name="recipeaddtofav" tools:ignore="MissingTranslation">Mets En Preferer</string>
+    <string name="recipeabout" tools:ignore="MissingTranslation">Auteurr: Adam Matar\nVersion: 1.0\nCST2335 Mobile Graphical Interface Programming\n</string>
+    <string name="recipeinstruction" tools:ignore="MissingTranslation">Etapes A Suivre\n</string>
+    <string name="recipeinstructions" tools:ignore="MissingTranslation">1. Ecrit une recette et presser cherche.\n2. Clickez sur l\'object pour voir plus de details et pour ajouter une recette au preferer.\n3. Navigez au preferer par clickez sur l\'etoile, vous pouvez deleter.\n</string>
+
+</resources>
