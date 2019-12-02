@@ -1,30 +1,30 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="app_name">AndroidFinalProject</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Currency Converter</string>
-    <string name="nav_header_subtitle">mail@wajahat.dev</string>
-    <string name="nav_header_desc">Navigation header</string>
-    <string name="action_home">Go Home Page</string>
-    <string name="menu_home">Currency Converter</string>
-    <string name="menu_gallery">Favorite</string>
-    <string name="menu_slideshow">Help</string>
-    <string name="menu_tools">Tools</string>
-    <string name="menu_share">Share</string>
-    <string name="menu_send">Send</string>
-    <string name="charging_station">Charging Station</string>
-    <string name="news">News</string>
-    <string name="recipe_finder">Recipe_Finder</string>
-    <string name="currency">Currency</string>
-    <string name="input_currency">Enter currency</string>
-    <string name="btn_convert">Convert</string>
-    <string name="btn_save">Add to favorite</string>
-    <string name="btn_delete">Delete</string>
-    <string name="dialog_delete_message">Are you want to delete?</string>
-    <string name="dialog_title">Delete</string>
-    <string name="ok">Ok</string>
-    <string name="cancel">Cancel</string>
-    <string name="dialog_help_message">
+    <string name="app_name" tools:ignore="MissingTranslation">AndroidFinalProject</string>
+    <string name="navigation_drawer_open" tools:ignore="MissingTranslation">Open navigation drawer</string>
+    <string name="navigation_drawer_close" tools:ignore="MissingTranslation">Close navigation drawer</string>
+    <string name="nav_header_title" tools:ignore="MissingTranslation">Currency Converter</string>
+    <string name="nav_header_subtitle" tools:ignore="MissingTranslation">mail@wajahat.dev</string>
+    <string name="nav_header_desc" tools:ignore="MissingTranslation">Navigation header</string>
+    <string name="action_home" tools:ignore="MissingTranslation">Go Home Page</string>
+    <string name="menu_home" tools:ignore="MissingTranslation">Currency Converter</string>
+    <string name="menu_gallery" tools:ignore="MissingTranslation">Favorite</string>
+    <string name="menu_slideshow" tools:ignore="MissingTranslation">Help</string>
+    <string name="menu_tools" tools:ignore="MissingTranslation">Tools</string>
+    <string name="menu_share" tools:ignore="MissingTranslation">Share</string>
+    <string name="menu_send" tools:ignore="MissingTranslation">Send</string>
+    <string name="charging_station" tools:ignore="MissingTranslation">Charging Station</string>
+    <string name="news" tools:ignore="MissingTranslation">News</string>
+    <string name="recipe_finder">Recipe Finder</string>
+    <string name="currency" tools:ignore="MissingTranslation">Currency</string>
+    <string name="input_currency" tools:ignore="MissingTranslation">Enter currency</string>
+    <string name="btn_convert" tools:ignore="MissingTranslation">Convert</string>
+    <string name="btn_save" tools:ignore="MissingTranslation">Add to favorite</string>
+    <string name="btn_delete" tools:ignore="MissingTranslation">Delete</string>
+    <string name="dialog_delete_message" tools:ignore="MissingTranslation">Are you want to delete?</string>
+    <string name="dialog_title" tools:ignore="MissingTranslation">Delete</string>
+    <string name="ok" tools:ignore="MissingTranslation">Ok</string>
+    <string name="cancel" tools:ignore="MissingTranslation">Cancel</string>
+    <string name="dialog_help_message" tools:ignore="MissingTranslation">
         Author: Wajahat Ali\n
         \nActivity version number: 1.0.0\n
         \nHow to use:
@@ -33,16 +33,25 @@
         \n3. Click delete button to remove favourite
         \n4. Click item in list favourite to see detail
         \n5. Click home icon to go back home page</string>
-    <string name="dialog_help_title">Help</string>
-    <string name="close">Close</string>
-    <string name="favMsginConvertFragment">Added to your favorite successfully!</string>
-    <string name="toast_ConvertFragment">Converter Loaded Successfully</string>
+    <string name="dialog_help_title" tools:ignore="MissingTranslation">Help</string>
+    <string name="close" tools:ignore="MissingTranslation">Close</string>
+    <string name="favMsginConvertFragment" tools:ignore="MissingTranslation">Added to your favorite successfully!</string>
+    <string name="toast_ConvertFragment" tools:ignore="MissingTranslation">Converter Loaded Successfully</string>
 
 
-    <string name="toast_deleted">Delete successfully</string>
-    <string name="toast_converted">Converted Successfully</string>
+    <string name="toast_deleted" tools:ignore="MissingTranslation">Delete successfully</string>
+    <string name="toast_converted" tools:ignore="MissingTranslation">Converted Successfully</string>
 
     <string name="recipesearch" tools:ignore="MissingTranslation">Search</string>
     <string name="recipesearchhint" tools:ignore="MissingTranslation">Search Here</string>
-
+    <string name="therecipemessage" tools:ignore="MissingTranslation">The Message</string>
+    <string name="recipewelcome" tools:ignore="MissingTranslation">Welcome!</string>
+    <string name="recipefavorites" tools:ignore="MissingTranslation">Favorites</string>
+    <string name="recipehelp" tools:ignore="MissingTranslation">Help</string>
+    <string name="recipequit" tools:ignore="MissingTranslation">Quit</string>
+    <string name="recipedelete" tools:ignore="MissingTranslation">Delete</string>
+    <string name="recipeaddtofav" tools:ignore="MissingTranslation">Add To Favorites</string>
+    <string name="recipeabout" tools:ignore="MissingTranslation">Author: Adam Matar\nVersion: 1.0\nCST2335 Mobile Graphical Interface Programming\n</string>
+    <string name="recipeinstruction" tools:ignore="MissingTranslation">Instructions\n</string>
+    <string name="recipeinstructions" tools:ignore="MissingTranslation">1. Type in the recipe and press search.\n2. Click on the item to see more details and to add a recipe to favorites.\n3. Navigate to favorites by clicking the star icon from there you can delete.\n</string>
 </resources>

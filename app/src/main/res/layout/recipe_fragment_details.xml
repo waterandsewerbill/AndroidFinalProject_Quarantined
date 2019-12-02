@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/recipeFragmentLocation"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/recipeFragmentImage"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/recipeFragmentTitle"
+        android:layout_below="@id/recipeFragmentImage"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/recipeFragmentURL"
+        android:layout_below="@id/recipeFragmentTitle"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recipeAddButton"
+        android:text="@string/recipeaddtofav"
+        android:layout_alignParentBottom="true"
+        android:background="#FF0000"
+        />
+
+
+
+
+
+</RelativeLayout>
+

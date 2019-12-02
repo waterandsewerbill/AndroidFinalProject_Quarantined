@@ -4,11 +4,20 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <ListView
+    <androidx.appcompat.widget.Toolbar
+
+        android:id="@+id/recipeToolbar"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        ></androidx.appcompat.widget.Toolbar>
+
+    <ListView
+        android:layout_width="300dp"
         android:layout_height="match_parent"
         android:id="@+id/recipeList"
-
+        android:layout_below="@id/recipeToolbar"
+        android:layout_above="@id/recipeProgressBar"
         />
 
     <Button
@@ -16,26 +25,51 @@
         android:layout_height="wrap_content"
         android:id="@+id/recipeSearchButton"
         android:text="@string/recipesearch"
-        android:layout_alignBottom="@+id/recipeList"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="#FF0000"
         />
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/recipeSearchBox"
-        android:layout_alignBottom="@+id/recipeList"
+        android:layout_alignParentBottom="true"
         android:layout_toEndOf="@+id/recipeSearchButton"
+
         android:hint="@string/recipesearchhint"
         />
 
     <ProgressBar
         android:id="@+id/recipeProgressBar"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         style="?android:attr/progressBarStyleHorizontal"
-        android:layout_alignBottom="@id/recipeList"
-        android:layout_toEndOf="@id/recipeSearchBox"
+        android:layout_above="@id/recipeSearchButton"
         android:visibility="invisible"
         />
+
+    <TextView
+        android:id="@+id/recipeCounterText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recipeList"
+        android:layout_above="@id/recipeSearchBox"
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <FrameLayout
+        android:id="@+id/recipeFragmentLocation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/recipeList"
+        android:layout_below="@id/recipeToolbar"
+        />
+
+
+
+
 
 </RelativeLayout>

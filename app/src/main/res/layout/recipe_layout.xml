@@ -2,48 +2,12 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
-    <ImageView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:id="@+id/recipeImageView"
-        />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/recipeTitle"
-        android:text="Recipe Title: "
-        android:layout_toRightOf="@id/recipeImageView"
         />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/recipeID"
-        android:text="Recipe ID: "
-        android:layout_toRightOf="@id/recipeImageView"
-        android:layout_below="@id/recipeTitle"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/recipePublisher"
-        android:text="Recipe Publisher: "
-        android:layout_toRightOf="@id/recipeImageView"
-        android:layout_below="@id/recipeID"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/recipeSocialRank"
-        android:text="Recipe Social Rank: "
-        android:layout_toRightOf="@+id/recipeImageView"
-        android:layout_below="@id/recipePublisher"
-        />
-
-
 
 
 </RelativeLayout>
