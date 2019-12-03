@@ -54,4 +54,45 @@
     <string name="recipeabout" tools:ignore="MissingTranslation">Author: Adam Matar\nVersion: 1.0\nCST2335 Mobile Graphical Interface Programming\n</string>
     <string name="recipeinstruction" tools:ignore="MissingTranslation">Instructions\n</string>
     <string name="recipeinstructions" tools:ignore="MissingTranslation">1. Type in the recipe and press search.\n2. Click on the item to see more details and to add a recipe to favorites.\n3. Navigate to favorites by clicking the star icon from there you can delete.\n</string>
+
+    <!--car charging strings-->
+    <!--main activity-->
+    <string name="carLatitudeLabel">Latitude</string>
+    <string name="carLongitudeLabel">Longitude</string>
+    <string name="carSearch">Search</string>
+    <string name="carFavourites">Favourites</string>
+    <string name="carHelp">Help</string>
+    <!--Help Page-->
+    <string name="carNameLabel">Author: </string>
+    <string name="carNameMessage">Ryan Brooks</string>
+    <string name="carVersionLabel">Verion: </string>
+    <string name="carVersionMessage">0.0.0.0.1</string>
+    <string name="carInstructionsLabel">Instructions: </string>
+    <string name="carInstructionsMessage">Tap and such</string>
+
+    <!--Details-Page-->
+
+    <string name="DetailsTitle">Charging Station Details</string>
+    <string name="carDetailLatitudeTVLabel">Latitude</string>
+    <string name="csdTVTitleLabel">Title: </string>
+    <string name="csdTVLatLabel">Latitude: </string>
+    <string name="csdTVLongLabel">Longitude: </string>
+    <string name="csdTVTeleLabel">Telephone: </string>
+    <string name="csdTVAddressLabel">Address: </string>
+    <string name="csdTVDistLabel">Distance: </string>
+    <string name="csdTVFavouriteLabel">Favourited?: </string>
+
+    <string name="csdButtonFavouriteLabel">Add To Favourites</string>
+    <string name="csdButtonGoogleLabel">Google Maps Directions</string>
+    <string name="csdButtonUnFavouriteLabel">Remove from Fav</string>
+    <string name="csdButtonBackLabel">Go Back</string>
+
+
+
+
+
+
+
+
+
 </resources>

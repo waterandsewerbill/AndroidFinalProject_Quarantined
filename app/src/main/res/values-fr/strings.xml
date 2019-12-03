@@ -14,4 +14,37 @@
     <string name="recipeinstruction" tools:ignore="MissingTranslation">Etapes A Suivre\n</string>
     <string name="recipeinstructions" tools:ignore="MissingTranslation">1. Ecrit une recette et presser cherche.\n2. Clickez sur l\'object pour voir plus de details et pour ajouter une recette au preferer.\n3. Navigez au preferer par clickez sur l\'etoile, vous pouvez deleter.\n</string>
 
+    <!--car charging strings-->
+    <!--main activity-->
+    <string name="carLatitudeLabel">Latitude</string>
+    <string name="carLongitudeLabel">Longitude</string>
+    <string name="carSearch">Chercher</string>
+    <string name="carFavourites">Favourites</string>
+    <string name="carHelp">Secours</string>
+    <!--Help Page-->
+    <string name="carNameLabel">Author: </string>
+    <string name="carNameMessage">Ryan Brooks</string>
+    <string name="carVersionLabel">Verion: </string>
+    <string name="carVersionMessage">0.0.0.0.1</string>
+    <string name="carInstructionsLabel">Instructions: </string>
+    <string name="carInstructionsMessage">Tap and such</string>
+
+    <!--Details-Page-->
+
+    <string name="DetailsTitle">Detailles de station de Voiture électrique</string>
+    <string name="carDetailLatitudeTVLabel">Latitude</string>
+
+    <string name="csdTVTitleLabel">Title: </string>
+    <string name="csdTVLatLabel">Latitude: </string>
+    <string name="csdTVLongLabel">Longitude: </string>
+    <string name="csdTVTeleLabel">Telephone: </string>
+    <string name="csdTVAddressLabel">Address: </string>
+    <string name="csdTVDistLabel">Distance: </string>
+    <string name="csdTVFavouriteLabel">Favourited?: </string>
+
+    <string name="csdButtonFavouriteLabel">Add To Favourites</string>
+    <string name="csdButtonGoogleLabel">Directions Google Maps</string>
+    <string name="csdButtonUnFavouriteLabel">Remove from Fav</string>
+    <string name="csdButtonBackLabel">Retour</string>
+
 </resources>

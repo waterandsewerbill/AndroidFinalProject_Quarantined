@@ -33,7 +33,13 @@
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
         </activity>
-
+        <activity android:name=".CarChargingStation.CarStationDetails"></activity>
+        <activity android:name=".CarChargingStation.CarEmpty" />
+        <activity android:name=".CarChargingStation.CarFavourites" />
+        <activity android:name=".CarChargingStation.CarSearchResults" />
+        <activity android:name=".CarChargingStation.CarHelp" />
+        <activity android:name=".CarChargingStation.CarMain">
+        </activity>
     </application>
 
     <uses-permission android:name="android.permission.INTERNET"/>
